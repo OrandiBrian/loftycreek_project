@@ -1,0 +1,169 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Admissions - Lofty Creek Christian School{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero bg-base-200 rounded-lg">
+    <div class="hero-content text-center py-12">
+        <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Join Our Community</h1>
+            <p class="py-6">Begin your journey towards academic excellence and spiritual growth at Lofty Creek Christian School.</p>
+            <button class="btn btn-primary">Apply Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- Application Process -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Application Process</h2>
+    <div class="steps steps-vertical lg:steps-horizontal w-full">
+        <div class="step step-primary">Submit Application</div>
+        <div class="step step-primary">Schedule Interview</div>
+        <div class="step step-primary">Assessment</div>
+        <div class="step step-primary">Enrollment</div>
+    </div>
+</div>
+
+<!-- Requirements -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Admission Requirements</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Required Documents</h2>
+                <ul class="list-disc list-inside">
+                    <li>Completed application form</li>
+                    <li>Birth certificate</li>
+                    <li>Immunization records</li>
+                    <li>Previous school records (if applicable)</li>
+                    <li>Recommendation letters</li>
+                    <li>Parent/Guardian interview</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Age Requirements</h2>
+                <ul class="list-disc list-inside">
+                    <li>Kindergarten: 4-5 years old</li>
+                    <li>Elementary: 6-11 years old</li>
+                    <li>Middle School: 12-14 years old</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tuition & Fees -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Tuition & Fees</h2>
+    <div class="overflow-x-auto">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Grade Level</th>
+                    <th>Annual Tuition</th>
+                    <th>Registration Fee</th>
+                    <th>Additional Fees</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kindergarten</td>
+                    <td>$8,500</td>
+                    <td>$500</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Elementary (1-5)</td>
+                    <td>$9,500</td>
+                    <td>$500</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>Middle School (6-8)</td>
+                    <td>$10,500</td>
+                    <td>$500</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Financial Aid -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Financial Aid</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Scholarships</h3>
+                <p>We offer various scholarships based on academic achievement, financial need, and special talents.</p>
+                <ul class="list-disc list-inside mt-4">
+                    <li>Academic Excellence Scholarship</li>
+                    <li>Need-based Financial Aid</li>
+                    <li>Arts & Athletics Scholarships</li>
+                    <li>Sibling Discount</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Payment Plans</h3>
+                <p>Flexible payment options to help families manage tuition costs.</p>
+                <ul class="list-disc list-inside mt-4">
+                    <li>Annual Payment</li>
+                    <li>Monthly Payment Plan</li>
+                    <li>Quarterly Payment Option</li>
+                    <li>Summer Payment Plan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+                When should I apply for admission?
+            </div>
+            <div class="collapse-content"> 
+                <p>We recommend applying as early as possible, ideally by January for the following academic year. However, we accept applications throughout the year based on availability.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+                What is the student-teacher ratio?
+            </div>
+            <div class="collapse-content"> 
+                <p>Our average class size is 18 students per teacher, ensuring personalized attention and quality education for all students.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+                Do you offer transportation services?
+            </div>
+            <div class="collapse-content"> 
+                <p>Yes, we provide bus transportation services for an additional fee. Routes are available throughout the surrounding areas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Admissions -->
+<div class="py-12 bg-base-200 rounded-lg px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Have Questions?</h2>
+    <p class="mb-6">Our admissions team is here to help you through the application process.</p>
+    <div class="flex justify-center gap-4">
+        <button class="btn btn-primary">Schedule a Tour</button>
+        <button class="btn btn-outline">Contact Admissions</button>
+    </div>
+</div>
+{% endblock %} 

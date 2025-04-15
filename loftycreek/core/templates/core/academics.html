@@ -1,0 +1,170 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Academics - Lofty Creek Christian School{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero bg-base-200 rounded-lg">
+    <div class="hero-content text-center py-12">
+        <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Academic Excellence</h1>
+            <p class="py-6">A comprehensive curriculum designed to challenge and inspire students to reach their full potential.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Curriculum Overview -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Curriculum</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Core Subjects</h2>
+                <ul class="list-disc list-inside">
+                    <li>Mathematics</li>
+                    <li>English Language Arts</li>
+                    <li>Science</li>
+                    <li>Social Studies</li>
+                    <li>Bible Studies</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Enrichment Programs</h2>
+                <ul class="list-disc list-inside">
+                    <li>Fine Arts</li>
+                    <li>Physical Education</li>
+                    <li>Technology</li>
+                    <li>Foreign Languages</li>
+                    <li>Character Education</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grade Levels -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Grade Levels</h2>
+    <div class="tabs tabs-boxed justify-center mb-8">
+        <a class="tab tab-active">Kindergarten</a>
+        <a class="tab">Elementary</a>
+        <a class="tab">Middle School</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Kindergarten (Ages 4-5)</h3>
+                <ul class="list-disc list-inside">
+                    <li>Early reading and writing</li>
+                    <li>Basic mathematics</li>
+                    <li>Social skills development</li>
+                    <li>Creative expression</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Elementary (Grades 1-5)</h3>
+                <ul class="list-disc list-inside">
+                    <li>Core academic subjects</li>
+                    <li>Bible-based character education</li>
+                    <li>Physical education</li>
+                    <li>Art and music</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Middle School (Grades 6-8)</h3>
+                <ul class="list-disc list-inside">
+                    <li>Advanced core subjects</li>
+                    <li>STEM focus</li>
+                    <li>Leadership development</li>
+                    <li>College preparation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Academic Support -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Academic Support</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Learning Support</h3>
+                <p>Our dedicated learning support team provides individualized attention to students who need additional help in specific subjects.</p>
+                <ul class="list-disc list-inside mt-4">
+                    <li>Small group tutoring</li>
+                    <li>Individual learning plans</li>
+                    <li>Progress monitoring</li>
+                    <li>Parent-teacher collaboration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Gifted Education</h3>
+                <p>We offer specialized programs for gifted students to help them reach their full potential.</p>
+                <ul class="list-disc list-inside mt-4">
+                    <li>Advanced coursework</li>
+                    <li>Enrichment activities</li>
+                    <li>Competition preparation</li>
+                    <li>Mentorship opportunities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Academic Calendar -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Academic Calendar</h2>
+    <div class="overflow-x-auto">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Day of School</td>
+                    <td>August 15, 2024</td>
+                    <td>Welcome back to a new academic year</td>
+                </tr>
+                <tr>
+                    <td>Fall Break</td>
+                    <td>October 10-12, 2024</td>
+                    <td>Three-day break for students</td>
+                </tr>
+                <tr>
+                    <td>Thanksgiving Break</td>
+                    <td>November 25-29, 2024</td>
+                    <td>Five-day break for students</td>
+                </tr>
+                <tr>
+                    <td>Christmas Break</td>
+                    <td>December 20, 2024 - January 3, 2025</td>
+                    <td>Two-week holiday break</td>
+                </tr>
+                <tr>
+                    <td>Spring Break</td>
+                    <td>March 15-22, 2025</td>
+                    <td>One-week break for students</td>
+                </tr>
+                <tr>
+                    <td>Last Day of School</td>
+                    <td>May 23, 2025</td>
+                    <td>End of academic year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %} 

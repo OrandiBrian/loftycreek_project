@@ -1,0 +1,147 @@
+{% extends 'core/base.html' %}
+
+{% block title %}About Us - Lofty Creek Christian School{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero bg-base-200 rounded-lg">
+    <div class="hero-content text-center py-12">
+        <div class="max-w-md">
+            <h1 class="text-5xl font-bold">About LCCS</h1>
+            <p class="py-6">Building tomorrow's leaders through faith, knowledge, and character since 1995.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Mission & Vision -->
+<div class="py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">Our Mission</h2>
+                <p>To provide a Christ-centered education that nurtures academic excellence, spiritual growth, and character development in a supportive and challenging environment.</p>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">Our Vision</h2>
+                <p>To be a leading Christian school that prepares students to be lifelong learners, responsible citizens, and faithful servants of God.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Core Values -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Core Values</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Faith</h3>
+                <p>Integrating Christian values and biblical principles into all aspects of education.</p>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Excellence</h3>
+                <p>Pursuing the highest standards in academics, athletics, and character development.</p>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h3 class="card-title">Community</h3>
+                <p>Fostering a supportive environment where students, teachers, and families work together.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- School History -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Our History</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+            </div>
+            <div class="timeline-start timeline-box">
+                <h3 class="font-bold">1995</h3>
+                <p>Founded with 50 students</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+            </div>
+            <div class="timeline-start timeline-box">
+                <h3 class="font-bold">2005</h3>
+                <p>Expanded to include middle school</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+            </div>
+            <div class="timeline-start timeline-box">
+                <h3 class="font-bold">2015</h3>
+                <p>New state-of-the-art facilities</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+            </div>
+            <div class="timeline-start timeline-box">
+                <h3 class="font-bold">2024</h3>
+                <p>Serving over 500 students</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Staff Section -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Leadership Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <div class="avatar placeholder">
+                    <div class="bg-neutral text-neutral-content rounded-full w-24">
+                        <span class="text-3xl">JD</span>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">John Doe</h2>
+                <p>Principal</p>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <div class="avatar placeholder">
+                    <div class="bg-neutral text-neutral-content rounded-full w-24">
+                        <span class="text-3xl">JS</span>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Jane Smith</h2>
+                <p>Academic Director</p>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <div class="avatar placeholder">
+                    <div class="bg-neutral text-neutral-content rounded-full w-24">
+                        <span class="text-3xl">RJ</span>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Robert Johnson</h2>
+                <p>Student Life Director</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

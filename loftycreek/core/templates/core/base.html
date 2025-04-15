@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Lofty Creek Christian School{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-primary text-primary-content">
+        <div class="navbar container mx-auto">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">LCCS</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'academics' %}">Academics</a></li>
+                    <li><a href="{% url 'admissions' %}">Admissions</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral text-neutral-content">
+        <div class="container mx-auto px-4 py-10">
+            <div class="footer">
+                <div>
+                    <span class="footer-title">Services</span> 
+                    <a class="link link-hover">Academic Programs</a>
+                    <a class="link link-hover">Student Life</a>
+                    <a class="link link-hover">Athletics</a>
+                    <a class="link link-hover">Arts & Music</a>
+                </div> 
+                <div>
+                    <span class="footer-title">Company</span> 
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Admissions</a>
+                    <a class="link link-hover">Careers</a>
+                </div> 
+                <div>
+                    <span class="footer-title">Legal</span> 
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </div>
+                <div>
+                    <span class="footer-title">Newsletter</span> 
+                    <div class="form-control w-80">
+                        <label class="label">
+                            <span class="label-text">Enter your email for school updates</span>
+                        </label> 
+                        <div class="relative">
+                            <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
+                            <button class="btn btn-primary btn-sm absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer footer-center p-4 bg-base-300 text-base-content">
+                <div>
+                    <p>Copyright © 2024 - All rights reserved by Lofty Creek Christian School</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

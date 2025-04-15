@@ -1,0 +1,103 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Home - Lofty Creek Christian School{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero min-h-[60vh] bg-base-200 rounded-lg">
+    <div class="hero-content text-center">
+        <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Welcome to LCCS</h1>
+            <p class="py-6">Nurturing minds, building character, and inspiring excellence in a Christ-centered environment.</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Programs -->
+<div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Programs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <div class="avatar placeholder">
+                    <div class="bg-neutral text-neutral-content rounded-full w-24">
+                        <span class="text-3xl">K</span>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Kindergarten</h2>
+                <p>Building strong foundations for lifelong learning</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary btn-sm">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <div class="avatar placeholder">
+                    <div class="bg-neutral text-neutral-content rounded-full w-24">
+                        <span class="text-3xl">E</span>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Elementary</h2>
+                <p>Nurturing young minds with quality education</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary btn-sm">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <div class="avatar placeholder">
+                    <div class="bg-neutral text-neutral-content rounded-full w-24">
+                        <span class="text-3xl">M</span>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Middle School</h2>
+                <p>Preparing students for academic excellence</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary btn-sm">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- News & Events -->
+<div class="py-12 bg-base-200 rounded-lg px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Latest News & Events</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Spring Sports Tournament</h2>
+                <p>Join us for our annual spring sports tournament featuring basketball, soccer, and volleyball.</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary btn-sm">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Science Fair 2024</h2>
+                <p>Students showcase their innovative projects at our annual science fair.</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary btn-sm">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="py-12 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
+    <p class="mb-6">Take the first step towards excellence in education</p>
+    <button class="btn btn-primary">Apply Now</button>
+</div>
+{% endblock %} 
